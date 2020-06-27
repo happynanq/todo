@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import TodoList from './TodoList';
+import React, { useState } from 'react';
 
 const TodoInput = (props)=>{
   const [text, setText] = useState("")
-  let i = 0
   
 
   const keyHandler = (e)=>{
     if(e.key === "Enter"){
-      i++
 
       const newTodo= {
         text, id:Math.random(), completed:false
